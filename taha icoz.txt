@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string isim;
+    int yas;
+
+    cout << "selam bu arada :D sozelciler geliyo yavastan hesap makinesine mi kaysak ?" << endl;
+
+    cout << "isim neydi brom ";
+    getline(cin, isim);
+
+    cout << isim << " yasin kacti bu arada ?";
+    cin >> yas;
+    cin.ignore();
+
+
+    if (yas < 18) {
+        cout << "tanımadilar brom akamadik hesap makinesine yasın kucuk" << endl;
+        return 0;
+    }
+
+    char devam = 'e';
+
+    while (devam == 'e' ) {
+        float x, y, sonuc;
+        char islem;
+
+        cout << "1. sayiyi giriniz: ";
+        cin >> x;
+
+        cout << "2. sayiyi giriniz: ";
+        cin >> y;
+
+        cout << "Yapmak istediginiz islemi girin (+ - * /): ";
+        cin >> islem;
+
+        if (islem == '+') {
+            sonuc = x + y;
+            cout << x << " + " << y << " = " << sonuc << endl;
+        }
+        else if (islem == '-') {
+            sonuc = x - y;
+            cout << x << " - " << y << " = " << sonuc << endl;
+        }
+        else if (islem == '*') {
+            sonuc = x * y;
+            cout << x << " * " << y << " = " << sonuc << endl;
+        }
+        else if (islem == '/') {
+            if (y != 0) {
+                sonuc = x / y;
+                cout << x << " / " << y << " = " << sonuc << endl;
+            }
+        }
+
+        cout << "Baska islem yapmak ister misin brom ? (e/h): ";
+        cin >> devam;
+    }
+
+    cout << "bb" << endl;
+
+    return 0;
+}
