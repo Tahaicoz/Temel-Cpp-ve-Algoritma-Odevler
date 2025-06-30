@@ -1,0 +1,20 @@
+Kullanıcı bir mini hesap makinesini çalıştırır.
+Makine önce hoş geldin mesajı basar.
+Kullanıcıdan isim ve yaş ister.
+Yaşa göre erişim verilir:
+
+18 yaşından küçükse: “Erişim reddedildi” der ve çıkar.
+
+18 ve üzeriyse: İşlem menüsü gösterilir.
+Kullanıcı 2 sayı girer, ardından yapmak istediği işlemi seçer:
+
+Toplama
+
+Çıkarma
+
+Çarpma
+
+Bölme
+
+Ardından işlem sonucu konsolda gösterilir.
+Program sonunda "başka işlem yapmak ister misin?" diye sorar.
